@@ -42,6 +42,8 @@ function run() {
     });
     const coverage = (totalHits / totalFinds) * 100;
     
+    core.debug(`Code Coverage ${coverage}`);
+    
     core.setOutput('code_coverage', coverage);
   });
 }
