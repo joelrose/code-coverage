@@ -1,13 +1,19 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Flutter Code Coverage'
+description: 'Calculate the Code Coverage in GH Actions'
+branding:
+  icon: check-square
+  color: green
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
-    required: true
-    default: '1000'
+  path:
+    description: 'lcov path'
+    required: false
+    default: './coverage/lcov.info'
+  exclude:
+    description: 'list of files you would like to exclude from coverage'
+    required: false
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  code_coverage: 
+    description: 'The code coverage from 0 to 100'
 runs:
   using: 'node16'
   main: 'dist/index.js'
