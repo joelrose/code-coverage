@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/actions/javascript-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5"
+    "@actions/core": "^1.2.5",
+    "lcov-parse": "^1.0.0",
+    "minimatch": "^5.0.1",
+    "prettier": "^2.6.2"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1",
