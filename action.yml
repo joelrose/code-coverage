@@ -1,4 +1,4 @@
-name: 'Flutter Code Coverage'
+name: 'Code Coverage Output'
 description: 'Calculate the Code Coverage in GH Actions'
 branding:
   icon: check-square
